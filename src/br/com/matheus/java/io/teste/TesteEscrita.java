@@ -14,16 +14,8 @@ public class TesteEscrita {
 		Writer osw = new OutputStreamWriter(fos);
 		BufferedWriter bw = new BufferedWriter(osw);
 		
-		bw.write("linha teste");
+		bw.write("Olá, Mundo!");
 		bw.newLine();
-		bw.write("linha2 teste");
-		bw.write("linha teste");
-		bw.newLine();
-		bw.write("linha2 teste");
-		bw.write("linha teste");
-		bw.newLine();
-		bw.write("linha2 teste");
-		
 		
 		bw.close();
 		
