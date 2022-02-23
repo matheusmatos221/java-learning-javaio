@@ -28,6 +28,7 @@ public class TesteCopiarArquivo {
 		while(linha != null && !linha.isEmpty()) {
 			bw.write(linha);
 			bw.newLine();
+			bw.flush();
 			linha = br.readLine();
 		}
 		
