@@ -19,7 +19,7 @@ public class TesteCopiarArquivo {
 		Reader isr = new InputStreamReader(fis);
 		BufferedReader br = new BufferedReader(isr);
 		
-		OutputStream fos = new FileOutputStream("lorem2.txt");
+		OutputStream fos = System.out; // new FileOutputStream("lorem2.txt");
 		Writer osr = new OutputStreamWriter(fos);
 		BufferedWriter bw = new BufferedWriter(osr);
 		
