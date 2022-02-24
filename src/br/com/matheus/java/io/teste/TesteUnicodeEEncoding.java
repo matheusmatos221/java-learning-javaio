@@ -7,13 +7,15 @@ import java.nio.charset.StandardCharsets;
 
 public class TesteUnicodeEEncoding {
 	public static void main(String[] args) throws IOException {
-		String s = "C";
+		String s = "ç";
 		// "Printa" o código decimal ASCII
 		System.out.println(s.codePointAt(0)); //67 = Letra C
 		
 		// Charset padrão do sistema operacional
 		Charset charset = Charset.defaultCharset();
 		System.out.println(charset.displayName()); //UTF-8
+		System.out.println();
+		
 		
 		// Guarda os bytes em um array com charset forçado para 'windows-1252'
 		byte[] bytes = s.getBytes("windows-1252");
