@@ -16,11 +16,12 @@ public class TesteEscritaFileWriter {
 //		BufferedWriter bw = new BufferedWriter(osw);
 
 		FileWriter fw = new FileWriter("lorem2.txt");
+		// FileWriter is a Writer
+		// we use BufferedWriter to get .newline() and other methods
+		BufferedWriter bw = new BufferedWriter(fw);
 		
-		FileWriter bw = fw;
-		
-		for(int i = 0; i<10; i++) {
-			bw.write("Olá, Mundo!" + i);
+		for(int i = 1; i<10; i++) {
+			bw.write("Linha - " + i);
 			bw.write(System.lineSeparator());
 		}
 		bw.close();

@@ -1,10 +1,9 @@
-Olá, Mundo!0
-Olá, Mundo!1
-Olá, Mundo!2
-Olá, Mundo!3
-Olá, Mundo!4
-Olá, Mundo!5
-Olá, Mundo!6
-Olá, Mundo!7
-Olá, Mundo!8
-Olá, Mundo!9
+Linha - 1
+Linha - 2
+Linha - 3
+Linha - 4
+Linha - 5
+Linha - 6
+Linha - 7
+Linha - 8
+Linha - 9
