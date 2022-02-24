@@ -12,7 +12,7 @@ public class TesteLeitura {
 	public static void main(String[] args) throws IOException {
 		// Instancia inputs e readers
 		InputStream fis = new FileInputStream("lorem.txt");
-		Reader isr = new InputStreamReader(fis);
+		Reader isr = new InputStreamReader(fis, "UTF-8");
 		BufferedReader br = new BufferedReader(isr);
 		
 		// lê primeira linha
