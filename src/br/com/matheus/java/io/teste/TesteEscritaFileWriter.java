@@ -1,12 +1,8 @@
 package br.com.matheus.java.io.teste;
 
 import java.io.BufferedWriter;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.Writer;
 
 public class TesteEscritaFileWriter {
 
@@ -15,12 +11,9 @@ public class TesteEscritaFileWriter {
 //		Writer osw = new OutputStreamWriter(fos);
 //		BufferedWriter bw = new BufferedWriter(osw);
 
-		FileWriter fw = new FileWriter("lorem2.txt");
-		// FileWriter is a Writer
-		// we use BufferedWriter to get .newline() and other methods
-		BufferedWriter bw = new BufferedWriter(fw);
+		BufferedWriter bw = new BufferedWriter(new FileWriter("lorem2.txt"));
 		
-		for(int i = 1; i<10; i++) {
+		for(int i = 1; i<5; i++) {
 			bw.write("Linha - " + i);
 			bw.write(System.lineSeparator());
 		}
