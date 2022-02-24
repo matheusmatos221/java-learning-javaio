@@ -1,4 +1,6 @@
-package br.com.alura.java.io.teste;
+package br.com.matheus.java.io.teste;
+
+import java.io.Serializable;
 
 /**
  * Classe que representa um cliente no Bytebank.
@@ -7,7 +9,7 @@ package br.com.alura.java.io.teste;
  * @version 0.1
  */
 
-public class Cliente {
+public class Cliente implements Serializable{
 
 	private String nome;
 	private String cpf;
